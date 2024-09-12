@@ -14,6 +14,19 @@ function pushTime()
     timeData.push(lastInterval)
     positionXData.push(x)
     positionYData.push(y)
-    myLineChart.update();
-
+    velocityXData.push(
+        (positionXData[Math.floor(lastInterval*20)]-positionXData[Math.floor((lastInterval-0.05)*20)])/0.05
+    )
+    velocityYData.push(
+        (positionYData[Math.floor(lastInterval*20)]-positionYData[Math.floor((lastInterval-0.05)*20)])/0.05
+    )
+    accelerationXData.push(
+        (velocityXData[Math.floor(lastInterval*20)]-velocityXData[Math.floor((lastInterval-0.05)*20)])/0.05
+    )
+    accelerationYData.push(
+        (velocityYData[Math.floor(lastInterval*20)]-velocityYData[Math.floor((lastInterval-0.05)*20)])/0.05
+    )
+    posChart.update();
+    velChart.update()
+    accChart.update()
 }
