@@ -12,6 +12,7 @@ let accelerationYData = []
 
 let posChart = new Chart(posCTX, {
 type: 'line',
+backgroundColor: ['rgb(0,0,0)'],
 data: {
 labels: timeData,
 datasets: [
@@ -42,7 +43,6 @@ scales: {
                 padding: 4,
                 size: 20,
                 weight: 'bold',
-                family: 'Arial'
             },
             color: 'darkblue'
         }
@@ -54,7 +54,7 @@ scales: {
             font: {
                 size: 20,  
                 weight: 'bold',
-                family: 'Arial'
+                family: 'Helvetica'
             },
             color: 'darkblue'
         },
@@ -100,7 +100,7 @@ let velChart = new Chart(velCTX, {
                     padding: 4,
                     size: 20,
                     weight: 'bold',
-                    family: 'Arial'
+                    family: 'Helvetica'
                 },
                 color: 'darkblue'
             }
@@ -112,7 +112,7 @@ let velChart = new Chart(velCTX, {
                 font: {
                     size: 20,  
                     weight: 'bold',
-                    family: 'Arial'
+                    family: 'Helvetica'
                 },
                 color: 'darkblue'
             },
@@ -158,7 +158,7 @@ let velChart = new Chart(velCTX, {
                         padding: 4,
                         size: 20,
                         weight: 'bold',
-                        family: 'Arial'
+                        family: 'Helvetica'
                     },
                     color: 'darkblue'
                 }
@@ -170,7 +170,7 @@ let velChart = new Chart(velCTX, {
                     font: {
                         size: 20,  
                         weight: 'bold',
-                        family: 'Arial'
+                        family: 'Helvetica'
                     },
                     color: 'darkblue'
                 },
