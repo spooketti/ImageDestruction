@@ -166,7 +166,7 @@ let velChart = new Chart(velCTX, {
             y: {
                 title: {
                     display: true,
-                    text: 'Velocity (px/s^2)',
+                    text: 'Acceleration (px/s^2)',
                     font: {
                         size: 20,  
                         weight: 'bold',
